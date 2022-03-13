@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,18 +11,20 @@
 
 <body>
     <div id="root">
-
-        <input id="search-box"  type="text" />
-        <div id="search-count">Please enter the search term</div>
+        <header>
+            <select id="select"></select>
+            <input id="search-box" type="text" />
+            <div id="search-count">Please enter the search term</div>
+        </header>
         <div id="episode-list"></div>
-        <div>All this stuff come from TVMaze.com></div>
+        <div>All this stuff come from TVMaze.com</div>
         <!-- <img id="img" src="AllEpisodes"> -->
-        
+
     </div>
-    
+
     <!-- Loads a provided function called getAllEpisodes() which returns all episodes -->
     <script src="episodes.js"></script>
-    
+
     <!-- Loads YOUR javascript code -->
     <script src="script.js"></script>
 
