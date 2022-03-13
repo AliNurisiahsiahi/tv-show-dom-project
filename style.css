@@ -1,20 +1,26 @@
  #root {
 
-     color: rgb(51, 49, 49);
-     width: 100vw;
-     height: 100vw;
-     padding: 10px;
-     display: flex;
-     flex-direction: column;
+   color: rgb(51, 49, 49);
+   width: 100vw;
+  
+   padding: 10px;
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 20px;
  }
 
-#episode-list{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+ h3 {
+   width: 100%;
+   text-align: center;
+ }
 
-}
+ #episode-list {
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+
+ }
 
  .episode {
    width: 28%;
@@ -23,9 +29,19 @@
    align-items: flex-start;
    border: 2px solid orange;
    padding: 5px;
+   margin-bottom: 50px;
  }
- footer{
-   bottom:0;
-   left: 0;
-   width: 100;
+
+ .episode img {
+   width: 100%;
+
+ }
+
+ footer {
+   background-color:brown;
+   width: 100%;
+   display: block;
+   position: relative;
+   height: 30px;
+   text-align: center;
  }

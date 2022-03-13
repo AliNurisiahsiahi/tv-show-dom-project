@@ -21,22 +21,22 @@ function makePageForEpisodes(episodeList) {
   episodeList.forEach((e) => {
     const episode = document.createElement("div");
     const heading = document.createElement("h3");
-    const summary = document.createElement("p");
     const eImage = document.createElement("img");
+    const summary = document.createElement("p");
     eImage.src = e.image.medium;
     // episodesImage.classList.add("img")
     heading.innerText = `${e.name}-${formatSeriesAndEpisode(
     e.season,
     e.number
   )}`;
-   
+
     summary.innerHTML = e.summary;
 
     episode.className = "episode";
 
     episode.appendChild(heading);
-    episode.appendChild(summary);
     episode.appendChild(eImage);
+    episode.appendChild(summary);
     episodeContainer.appendChild(episode);
   })
 }
